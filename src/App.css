@@ -1,0 +1,98 @@
+/* Layout geral */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  height: 100%;
+
+}
+
+.page {
+  min-height: 100vh;
+  background: #f8cdda;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  place-items: center;
+  padding-bottom: 80px;
+  background-image: url("/fotos lala/back.png");
+  background-repeat: no-repeat;   /* evita repetir a imagem */
+  background-position: center;    /* centraliza a imagem */
+  background-size: cover; 
+}
+
+/* Cartões */
+.card {
+  background: #d6e6eb;
+  padding: 30px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  max-width: 600px;
+  width: 90%;
+  place-self: center;
+}
+
+.card-amo{
+  background: #ff76c4;
+  padding: 30px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  max-width: 600px;
+  width: 90%;
+  place-self: center;
+}
+/* Botões fixos */
+.buttons {
+  position: fixed;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+
+button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #ff6fa5;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover:not(:disabled) {
+  background: #ff3f85;
+}
+
+button:disabled {
+  background: #aaa;
+  cursor: not-allowed;
+}
+
+/* Animação suave */
+.fade-in {
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.img1{
+  width: 15rem;
+  border-radius: 18px;
+}
